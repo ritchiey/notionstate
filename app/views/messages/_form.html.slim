@@ -6,8 +6,5 @@
         - @message.errors.full_messages.each do |message|
           li = message
 
-  .field
-    = f.input :body
-  .field
-    = f.association :user
-  .actions = f.submit
+  = f.input :body, label: false
+  = f.submit 'Say'
